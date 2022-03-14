@@ -2,19 +2,18 @@
 
 /**
  *
- *  *main - Entry point
+ *  main - Entry point
  *
- *   *My hello, printf task
+ *   My hello, printf task
  *
- *    *Return: return 1 after progress execution
+ *    Return: return 1 after progress execution
  *
- *     */
-
+ */
 int main(void)
 
 {
 
-	printf("wit proper grammer, but the outcome is a piece of art,\n");
+	printf("with proper grammer, but the outcome is a piece of art,\n");
 
 	return (0);
 
