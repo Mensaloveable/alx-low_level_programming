@@ -1,19 +1,16 @@
-#include <stdio.h>
-/**
- * main - Entry point
- *
- *Return: Always 0 (Success/correct)
- *
- */
-int​ ​main​(​void​) 
+#​include​ ​<​stdio.h​> 
+/*​* 
+​ * main - Entry point 
+​ * 
+​ * Return: Always 0 (Success) 
+​ ​*/ 
+​int​ ​main​(​void​) 
 { 
-int​ c = ​0​; 
-while​ (c < ​10​) 
-{ 
-putchar​(​48​ + c); 
-c++; 
-} 
-putchar​(​'​\n​'​); 
-return​ (​0​); 
-}
-   
+int​ k; 
+  
+​for​ (k = ​48​; k <= ​57​; k++) 
+​{ 
+putchar​(k); 
+​} 
+​putchar​(​'​\n​'​); 
+​return​ (​0​);
