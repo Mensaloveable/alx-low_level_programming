@@ -4,13 +4,16 @@
  *
  *Return: Always 0 (Success/correct)
  */
-int main(void)
-{
-int i;
-for (i = 48; i < 57; i++)
-{
-putchar(i);
-}
-putchar("\n");
-return (0);
-}
+ ​int​ ​main​(​void​) 
+ ​{ 
+ ​        ​int​ c = ​0​; 
+  
+ ​        ​while​ (c < ​10​) 
+ ​        { 
+ ​                ​putchar​(​48​ + c); 
+ ​                c++; 
+ ​        } 
+  
+ ​        ​putchar​(​'​\n​'​); 
+ ​        ​return​ (​0​); 
+ ​}
