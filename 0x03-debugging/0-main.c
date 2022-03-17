@@ -1,16 +1,15 @@
 #include "main.h"
 /**
- * main - main
+ * main - Debugging
  * Return: 0
  */
 
 int main(void)
 {
-	int i;
-	i = o;
+int i;
+i = o;
 
-	positive_or_negative(i);
+positive_or_negative(i);
 
-	return (0);
-
+return (0);
 }
