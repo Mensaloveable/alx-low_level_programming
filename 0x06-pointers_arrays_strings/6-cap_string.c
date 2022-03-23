@@ -1,27 +1,29 @@
-#include <stdio.h>
+#include "main.h"
+
 /**
- * reverse_array - writes the character c to stdout
- * @a: The character to print
- * @n: dfsdfsdfsd
- * Return: On success 1.
- * On error, -1 is returned, and errno is set appropriately.
+ * cap_string - capitalizes all words of a string
+ * @s: string to capitalize
+ * Return: string;
  */
-void reverse_array(int *a, int n)
+
+char *cap_string(char *s)
 {
+	int i = 1;
 
-	int b = 0, c = 0;
-	int d[20];
-
-	n--;
-	while (b <= n)
+	if (s[0] >= 'a' && s[0] <= 'z')
 	{
-		d[n - b] = a[b];
-		b++;
-
+		s[0] = s[0] - 32;
 	}
-	while (c <= n)
+	for (; s[i]; i++)
 	{
-		a[c] = d[c];
-		c++;
+		if ((s[i - 1] == ' ' || s[i - 1] == '\n' || s[i - 1] == '\t'
+		    || s[i - 1] == ',' || s[i - 1] == ';' || s[i - 1] == '!'
+		    || s[i - 1] == '?' || s[i - 1] == '"' || s[i - 1] == '('
+		     || s[i - 1] == ')' || s[i - 1] == '{' || s[i - 1] == '}'
+		     || s[i - 1] == '.') && (s[i] > 'a' && s[i] < 'z'))
+		{
+			s[i] = s[i] - 32;
+		}
 	}
+	return (s);
 }
